@@ -37,7 +37,6 @@ export const List = () => {
 
         if (resultArr.length <= 100) {
             if (Math.abs((element.scrollHeight - element.scrollTop) - element.clientHeight) < 1) {
-                console.log('scroll');
                 plus20(resultArr, data);
             }
         }
@@ -48,7 +47,7 @@ export const List = () => {
 
         {resultArr.map((m, index) =>
 
-            <div className={st.magic}>
+            <div key={`${m.name} + ${m.number} + ${index}`} className={st.magic}>
                 {m.name + `  ${m.surname}`}
 
             </div>

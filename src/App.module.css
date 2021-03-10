@@ -17,7 +17,7 @@
     transition: 1s;
     animation: show 1s 1;
     animation-fill-mode: forwards;
-    animation-delay: 300ms;
+    animation-delay: 400ms;
 }
 
 @keyframes show {
